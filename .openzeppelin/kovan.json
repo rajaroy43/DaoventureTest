@@ -1,0 +1,144 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xbfe2FC2897A78C775ab0b86bd62D4E265c3BE2ca",
+    "txHash": "0xf67aa11865e20e006d4126e41eb8bd5ce6f21495d498f108dfcb04cce12dae20"
+  },
+  "proxies": [
+    {
+      "address": "0xd6D5E4b4201dDE618d26054492a8678Fa0DD5EB4",
+      "txHash": "0x50944869f7b865cd1bf88ac869f095f0b7861e6212e00f5c15eb934f1e9593df",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "7290549a39c0ce10d34b846e219405512ab641165b375ea62f6034d2ec1083fc": {
+      "address": "0x2D262675BeedcBf6B3b38Cd0dfe42Ae9D28A0f41",
+      "txHash": "0x888f784f330c61531511a4d0c1e3312cb8ff2d3884e69ec6ec86c8c86061b7c0",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:28"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "..\\@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:74"
+          },
+          {
+            "contract": "CarSelling",
+            "label": "inventory",
+            "type": "t_mapping(t_uint256,t_struct(Product)30_storage)",
+            "src": "..\\..\\..\\..\\..\\C\\Users\\raja roy\\Desktop\\Solidity-test\\contracts\\CarSelling.sol:26"
+          },
+          {
+            "contract": "CarSelling",
+            "label": "soldCars",
+            "type": "t_mapping(t_uint256,t_struct(Buyer)39_storage)",
+            "src": "..\\..\\..\\..\\..\\C\\Users\\raja roy\\Desktop\\Solidity-test\\contracts\\CarSelling.sol:27"
+          },
+          {
+            "contract": "CarSelling",
+            "label": "carId",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\C\\Users\\raja roy\\Desktop\\Solidity-test\\contracts\\CarSelling.sol:28"
+          }
+        ],
+        "types": {
+          "t_mapping(t_uint256,t_struct(Product)30_storage)": {
+            "label": "mapping(uint256 => struct CarSelling.Product)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(Product)30_storage": {
+            "label": "struct CarSelling.Product",
+            "members": [
+              {
+                "label": "creator",
+                "type": "t_address"
+              },
+              {
+                "label": "carName",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "sellPrice",
+                "type": "t_uint256"
+              },
+              {
+                "label": "launchDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "productId",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_uint256,t_struct(Buyer)39_storage)": {
+            "label": "mapping(uint256 => struct CarSelling.Buyer)"
+          },
+          "t_struct(Buyer)39_storage": {
+            "label": "struct CarSelling.Buyer",
+            "members": [
+              {
+                "label": "carOwner",
+                "type": "t_address"
+              },
+              {
+                "label": "productId",
+                "type": "t_uint256"
+              },
+              {
+                "label": "buyDate",
+                "type": "t_uint256"
+              },
+              {
+                "label": "buyPrice",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
